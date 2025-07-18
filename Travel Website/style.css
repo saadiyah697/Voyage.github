@@ -18,7 +18,7 @@
 }
 
 #logo{
-    font-size: 38px;
+    font-size: 40px;
     font-weight: 550;
     color: black;
     text-shadow: 1px 1px 1px black;
@@ -35,7 +35,7 @@
     margin-left: 20px;
 }
 .nav-item .nav-link{
-    font-size: 16.5px;
+    font-size: 20px;
     font-weight: 570;
     color: black;
     letter-spacing: 1px;
@@ -55,6 +55,9 @@
     margin-right: 1px;
 }
 /* Navbar End */
+
+
+
 
 /* Home Section Start */
 .home{
@@ -158,7 +161,7 @@
 
 .booking{
 background: url(./images/bg2.jpg);
-height: 125vh;
+
 background-repeat: no-repeat;
 background-size: cover;
 padding: 50px;
@@ -205,10 +208,11 @@ button[type="submit"]:hover {
     margin-top: 20px; 
 }
 .booking .col-md-6 .card img {
-    height: 500px; /* Increase the height */
-    width: auto; /* Maintain the aspect ratio */
+    max-height: 400px; /* Increase the height */
+    width: 100; /* Maintain the aspect ratio */
     border-radius: 10px; /* Keep the rounded corners */
     object-fit: cover; /* Ensures the image fills its container while cropping edges if needed */
+    display: block;
 }
 
 /* Styling for the form fields */
@@ -242,11 +246,14 @@ button[type="submit"]:hover {
         padding:20px;
     }
 }
+
+
 /*booking section end*/
 
 
 /* Packages Section Start */
 .Packages {
+   margin-top: 0px;
     width: 100%;
     padding: 30px 20px;
     background-image: url(./images/packages.jpg);
@@ -255,7 +262,7 @@ button[type="submit"]:hover {
 }
 .main-text h1 {
     text-align: center;
-    font-size: 650px;
+    font-size: 3rem;
     color: #000000;
     margin-bottom: 30px;
   }
@@ -482,9 +489,11 @@ button[type="submit"]:hover {
 
 .services{
     background-image:url(./images/kashmir.jpg);
-    height: 125vh;
+    
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 50px 20px; /* ✅ Add padding */
+    position: relative;
 }
 
 .services .card{
@@ -849,3 +858,84 @@ body {
 }
 /* Footer End */
 
+/*  Responsive navbar */
+
+/* Large laptop */
+@media screen and (max-width: 1400px) {
+  #logo {
+    font-size: 32px;
+  }
+
+  .nav-item .nav-link {
+    font-size: 1rem;
+  }
+}
+
+/* laptop */
+@media screen and (max-width: 1300px) {
+  #logo {
+    font-size: 28px;
+  }
+
+  .nav-item .nav-link {
+    font-size: 0.95rem;
+    padding: 5px 10px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+  #logo {
+    font-size: 24px;
+  }
+
+  .nav-item .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  #logo {
+    font-size: 22px;
+  }
+
+  .nav-item .nav-link {
+    font-size: 0.85rem;
+    padding: 4px 8px;
+  }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 430px) {
+  #navbar {
+    height: auto;
+  }
+
+  #logo {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .navbar-nav {
+    margin-left: 20;
+  }
+
+  .nav-item .nav-link {
+    font-size: 0.85rem;
+    display: block;
+    padding: 8px 10px;
+    text-align: left;
+  }
+
+  .navbar-toggler {
+    margin-left: 10px;
+  }
+
+  #navbar form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
